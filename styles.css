@@ -7,13 +7,33 @@ body {
     overflow: hidden;
 }
 
+.header, .footer {
+    padding: 20px;
+    width: 100%;
+}
+
+.header {
+    background-color: #4e89ae;
+    color: #f4f4f4;
+    border-bottom: 3px solid #2a628f;
+}
+
+.footer {
+    background-color: #333;
+    color: #f4f4f4;
+    padding: 5px;
+    position: fixed;
+    bottom: 0;
+    font-size: 12px;
+}
+
+
+
 #container {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    height: 90%;
-    width: 80%;
     background-color: bisque;
     border-color: black;
 
