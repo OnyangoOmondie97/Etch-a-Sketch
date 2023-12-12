@@ -3,11 +3,15 @@ const sizeBtn = document.getElementById('size-btn');
 
 function createGrid(size) {
     container.innerHTML = '';
-    container.style.width = `${size * 40}px`; 
-
+    
+    // Calculate the size of each grid square based on the container size
+    const squareSize = Math.floor(container.clientWidth / size);
+    
     for (let i = 0; i < size * size; i++) {
         const gridSquare = document.createElement('div');
         gridSquare.classList.add('grid-square');
+        gridSquare.style.width = `${squareSize}px`;
+        gridSquare.style.height = `${squareSize}px`;
         container.appendChild(gridSquare);
     }
 

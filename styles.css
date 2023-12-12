@@ -1,21 +1,43 @@
 body {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
     margin: 0;
     overflow: hidden;
+    font-family: Arial, sans-serif;
+    background-color: grey;
+}
+
+#App {
+    width: 60%;
+    max-width: 800px;
+    margin:auto;
+    border: 1px solid black;
+    box-sizing: border-box;
+    overflow: auto;
+    border-top: 5px;
+    border-bottom: 5px;
+}
+
+.col-12 {
+    width: 100%;
+    
 }
 
 .header, .footer {
-    padding: 20px;
     width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 }
 
 .header {
     background-color: #4e89ae;
     color: #f4f4f4;
-    border-bottom: 3px solid #2a628f;
+    border-bottom: solid #2a628f;
 }
 
 .footer {
@@ -23,28 +45,74 @@ body {
     color: #f4f4f4;
     padding: 5px;
     position: fixed;
-    bottom: 0;
+    bottom: 5px;
     font-size: 12px;
 }
 
-
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
 
 #container {
+    flex: 1;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     background-color: bisque;
-    border-color: black;
-
+    border: 1px solid black;
+    width: 100%;
+    height: 80%;
 }
+    
 
 .grid-square {
-    width: 40px;
-    height: 40px;
-    border: 1px solid #ddd;
+    width: auto;
+    height: auto;
+    border: solid #ddd;
+    box-sizing: border-box;
 }
 
 #size-btn {
-    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%;
+    height: 20%;
 }
+
+.contact-section {
+    margin-top: 20px;
+}
+
+.contact-section-header {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.contact-links {
+    display: flex;
+    gap: 10px;
+}
+
+.contact-details {
+    text-decoration: none;
+    color: #333;
+    background-color: #f4f4f4;
+    padding: 8px 12px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-details i {
+    margin-right: 5px;
+}
+
+.copyright {
+    font-size: 12px;
+}
+
+

@@ -8,56 +8,46 @@
     <title>Etch-A-Sketch</title>
 </head>
 <body>
-    <!-- Header -->
-    <div class="col-8">
-        <header class="header">
-            <h1 class="title">Etch-A-Sketch</h1>
-        </header>
-    </div>
+    <div id="App">
+         <!-- Header Section -->
+         <div class="col-12 h-10">
+            <header class="header">
+                <h1 class="title">Etch-A-Sketch</h1>
+            </header>
+        </div>
+
+
+         <!-- Container Section -->
+         <div class="col-12 h-70">
+            <div class="container">
+                <button id="size-btn" class="btn btn-primary">Change Grid Size</button>
+                <div id="container"></div>
+            </div>
+        </div>
     
-    <!-- Container -->
-    <div class="container">
-        <button id="size-btn" class="btn btn-primary">Change Grid Size</button>
-        <div id="container"></div>
+         <!-- Footer Section -->
+         <div class="col-12 h-10">
+            <footer>
+                <!-- Contact Section -->
+                <section id="contact" class="contact-section">
+                    <div class="contact-section-header">
+                        <h2>Let's connect...</h2>
+                    </div>
+                    <div class="contact-links">
+                        <a id="profile-link" href="https://github.com/OnyangoOmondie97" target="_blank" class="btn contact-details"><i class="fab fa-github"></i> GitHub</a>
+                        <a id="profile-link" href="https://www.linkedin.com/in/keith-omondi/" target="_blank" class="btn contact-details"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                        <a href="mailto:keithjunior78@gmail.com" class="btn contact-details"><i class="fas fa-at"></i> Send a mail</a>
+                    </div>
+                </section>
+                <!-- Copyright Section -->
+                <section id="copyright" class="copyright-section">
+                    <div class="copyright">
+                        © 2023 Keith's Portfolio. All rights reserved.
+                    </div>  
+                </section>
+            </footer>
+        </div>
     </div>
-
-     <!-- Footer Section -->
-     <div class="col-8">
-        <footer>
-            <!-- Contact Section -->
-            <section id="contact" class="contact-section">
-                <div class="contact-section-header">
-                    <h2>Let's connect...</h2>
-                </div>
-                <div class="contact-links">
-                    <a id="profile-link" href="https://github.com/OnyangoOmondie97" target="_blank" class="btn contact-details"><i class="fab fa-github"></i> GitHub</a>
-                    <a id="profile-link" href="https://www.linkedin.com/in/keith-omondi/" target="_blank" class="btn contact-details"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                    <a href="mailto:keithjunior78@gmail.com" class="btn contact-details"><i class="fas fa-at"></i> Send a mail</a>
-                </div>
-            </section>
-            <!-- Copyright Section -->
-            <section id="copyright" class="copyright-section">
-                <div class="copyright">
-                    © 2023 Keith's Portfolio. All rights reserved.
-                </div>  
-            </section>
-        </footer>
-     </div>
-     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     <script src="script.js"></script>
