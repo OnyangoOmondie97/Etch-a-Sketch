@@ -4,11 +4,19 @@ body {
     justify-content: center;
     height: 100vh;
     margin: 0;
+    overflow: hidden;
 }
 
 #container {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+    width: 80%;
+    background-color: bisque;
+    border-color: black;
+
 }
 
 .grid-square {
