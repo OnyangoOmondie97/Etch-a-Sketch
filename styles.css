@@ -1,0 +1,22 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid-square {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ddd;
+}
+
+#size-btn {
+    margin-bottom: 20px;
+}
